@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: cadetblue;
+    background-image: -webkit-linear-gradient(rgb(75, 165, 175), rgb(144, 100, 100), rgb(123, 153, 59));
+    min-height: 800px;
+}
+#header{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#game{
+    height: 600px;
+    width: 500px;
+    border: 1px solid black;
+    background: url(/images/jungle.jpg) ;
+    background-size: cover;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+#block{
+    width: 50px;
+    height: 600px;
+    background-color: blue;
+    position: relative;
+    left: 500px;
+    animation: block 2s linear infinite;
+}
+
+@keyframes block{       
+    0%{
+        left: 500px
+    }
+    100%{
+        left: -50px
+    }
+}
+
+#hole{
+    height: 150px;
+    width:50px;
+    background-color: rgb(241, 241, 140);
+    position: relative;
+    left:500px;
+    top: -600px;
+    animation: block 2s linear infinite
+}
+#bird{
+    position: fixed;
+    top: 100px;
+    height: 120px;
+    width: 140px;
+}
+#bird img{
+    height: 120px;
+    width: 140px;
+}
+
+#result{
+    height: 350px;
+    width: 500px;
+    background-color: brown;
+    margin: 5rem auto;
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    display: none;
+    text-align: center;
+}
+#btn{
+    padding: 0.5rem  1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: green;
+    color:aliceblue;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top:1rem;
+    cursor: pointer;
+}
+#text{
+    margin-top: 1rem;
+    font-size: 2rem;
+    color:blanchedalmond;
+}
+#foo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     position: fixed;
+     bottom: 10px;
+     right: 15px;
+}
