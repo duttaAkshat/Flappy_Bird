@@ -17,7 +17,7 @@ body{
     height: 600px;
     width: 500px;
     border: 1px solid black;
-    background: url(/images/jungle.jpg) ;
+    background: url(jungle.jpg) ;
     background-size: cover;
     margin: 2rem auto;
     overflow: hidden;
